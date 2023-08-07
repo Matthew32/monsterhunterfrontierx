@@ -1,0 +1,23 @@
+.sidebar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e2e3e5;
+    padding: 1rem;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .sidebar a {
+    color: #292b2c;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    color: #000;
+  }
+  
+  .sidebar.collapsed {
+    width: 6rem;
+  }
+  
+  .sidebar.expanded {
+    width: 20rem;
+  }
