@@ -1,29 +1,22 @@
 "use client"
+import React, { useState } from 'react';
 
 const menuItems = [
     {
-      href: '/',
-      title: 'Homepage',
-    },
-    {
-      href: 'https://xl3lackout.github.io/MHFZ-Ferias-English-Project/buki/buki.htm',
+      href: 'https://xl3lackout.github.io/MHFZ-Ferias-English-Project/buki/taiken.htm',
       title: 'Swords',
-    },
-    {
-      href: '/contact',
-      title: 'Contact',
-    },
+    }
   ];
 
-function Sidebar() {
+function Sidebar(onClickHandler:any) {
     return (
         <div className='flex flex-col md:flex-row flex-1'>
-            <aside className='overflow-y-auto fixed bg-fuchsia-100 w-full h-full md:w-60'>
+            <aside className='overflow-y-auto fixed text-[#fffff2] bg-[#2b2b2b] bg-border-4 border-indigo-200 border-rose-600 w-full h-full md:w-40'>
                 <nav>
                     <ul>
                         {menuItems.map(({ href, title }) => (
-                            <li className='m-2' key={title}>
-                                <a href={href}>
+                            <li className='border-2 w-full' key={title}>
+                                <a href={href} onClick={onClickHandler.onClickHandler} >
                                     {title}
                                 </a>
                             </li>
