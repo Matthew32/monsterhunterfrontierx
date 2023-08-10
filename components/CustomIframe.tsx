@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Iframe from 'react-iframe'
 
 
-function CustomIframe(src) {
+function CustomIframe(src:{src:string}) {
     return (
         <Iframe  url={src.src}
         id=""

@@ -5,7 +5,7 @@ import Sidebar from '@/components/Sidebar';
 import CustomIframe from '@/components/CustomIframe';
 export default function Home() {
   const [src, setSrc] = useState('https://xl3lackout.github.io/MHFZ-Ferias-English-Project/buki/taiken.htm');
-  const onClickHandler = (e) => {
+  const onClickHandler = (e:any) => {
     e.preventDefault();
     setSrc(e.target.href);
   };
