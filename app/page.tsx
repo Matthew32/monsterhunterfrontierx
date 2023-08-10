@@ -1,5 +1,3 @@
-"use client"
-import Iframe from 'react-iframe'
 import React, { useState } from 'react';
 import Sidebar from '@/components/Sidebar';
 import CustomIframe from '@/components/CustomIframe';
